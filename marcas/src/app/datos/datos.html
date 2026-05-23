@@ -1,0 +1,57 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <ng-container matColumnDef="nombre_categoria">
+    <th mat-header-cell *matHeaderCellDef> Lista Categorias </th>
+    <td mat-cell *matCellDef="let lista_categorias"> {{lista_categorias.
+                                                        nombre_categoria}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="logo_marca">
+    <th mat-header-cell *matHeaderCellDef> Lista Marcas </th>
+    <td mat-cell *matCellDef="let lista_marcas"> {{lista_marcas.logo_marca}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="texto">
+    <th mat-header-cell *matHeaderCellDef> Instant Coupon </th>
+  </ng-container>
+
+  <ng-container matColumnDef="lista_marcas">
+    <th mat-header-cell *matHeaderCellDef> Nombre Marca </th>
+    <td mat-cell *matCellDef="let lista_marcas"> {{lista_marcas.nombre_marca}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="lista_marcas">
+    <th mat-header-cell *matHeaderCellDef> Promo Marcas </th>
+    <td mat-cell *matCellDef="let lista_marcas"> {{ lista_marcas.promo_marca }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="lista_marcas">
+    <th mat-header-cell *matHeaderCellDef> Logo Marca </th>
+    <td mat-cell *matCellDef="let lista_marcas"> {{ lista_marcas.logo_marca }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="lista_marcas">
+    <th mat-header-cell *matHeaderCellDef> Imagen marca </th>
+    <td mat-cell *matCellDef="let lista_marcas"> {{ lista_marcas.imagen_marca }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="texto">
+    <th mat-header-cell *matHeaderCellDef> Instant Coupon </th>
+  </ng-container>
+
+  <ng-container matColumnDef="lista_marcas">
+    <th mat-header-cell *matHeaderCellDef> Promo Marcas </th>
+    <td mat-cell *matCellDef="let lista_marcas"> {{ lista_marcas.nombre_marca }} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="lista_marcas">
+    <th mat-header-cell *matHeaderCellDef> Promo Marca </th>
+    <td mat-cell *matCellDef="let lista_marcas"> {{ lista_marcas.promo_marca }} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
